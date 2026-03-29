@@ -1,1 +1,199 @@
-/* CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #121224;
+    color: #f3f3f3;
+    line-height: 1.6;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1d1d3a;
+    border-bottom: 0.2rem solid #00f5d4;
+}
+
+.encabezado h1 {
+    font-family: "VT323", monospace;
+    font-size: 3rem;
+    color: #00f5d4;
+    letter-spacing: 0.08rem;
+}
+
+.encabezado p {
+    margin-top: 0.5rem;
+    color: #ff4fd8;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #2b2b52;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    border: 0.1rem solid #ff4fd8;
+    border-radius: 0.3rem;
+}
+
+main {
+    width: min(92%, 70rem);
+    margin: 1.5rem auto;
+}
+
+.bloque {
+    background-color: #1d1d3a;
+    border: 0.1rem solid #3d3d73;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#sobre-mi,
+#tarjetas,
+#habilidades,
+#contacto,
+#peliculas {
+    scroll-margin-top: 1rem;
+}
+
+h2 {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+    color: #00f5d4;
+    margin-bottom: 0.8rem;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sobre-mi-contenido img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.tarjeta {
+    border: 0.1rem solid #5f5faa;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    background-color: #252549;
+    transition: background-color 0.25s ease;
+}
+
+.tarjeta:hover {
+    background-color: #313163;
+}
+
+.tarjeta img,
+.pelicula img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    border: 0.1rem solid #5f5faa;
+    padding: 0.65rem;
+    text-align: left;
+}
+
+th {
+    background-color: #2f2f5e;
+}
+
+form {
+    display: grid;
+    gap: 0.55rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 0.1rem solid #5f5faa;
+    border-radius: 0.3rem;
+    background-color: #0f0f21;
+    color: #f3f3f3;
+}
+
+button {
+    margin-top: 0.3rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #00f5d4;
+    color: #161632;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.25s ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.contenedor-peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+}
+
+.pelicula {
+    border: 0.1rem solid #5f5faa;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    background-color: #252549;
+}
+
+.pie {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1d1d3a;
+    border-top: 0.2rem solid #00f5d4;
+}
+
+.pie a {
+    color: #ff4fd8;
+    text-decoration: none;
+}
+
+@media (max-width: 48rem) {
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+}

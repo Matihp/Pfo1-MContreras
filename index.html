@@ -3,20 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Práctico PFO1</title>
- 
+    <title>Portafolio Retro - PFO1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-
+    <header id="inicio" class="encabezado">
+        <!-- Encabezado principal: presenta el título del sitio y su estilo general; a futuro se puede sumar un logo propio -->
+        <h1>RetroDev</h1>
+        <p>Portafolio personal con estética de videojuegos clásicos</p>
     </header>
 
-    <main>
+    <nav class="navegacion">
+        <!-- Navegación principal: permite moverse rápido entre secciones clave; a futuro se puede convertir en menú hamburguesa -->
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tarjetas">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
+    <main>
+        <section id="sobre-mi" class="bloque">
+            <!-- Presentación personal: descripción breve de perfil, intereses y objetivo profesional; a futuro se puede sumar CV descargable -->
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi-contenido">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Setup gamer retro con teclado iluminado">
+                <p>
+                    Soy Matías, estudiante apasionado por el desarrollo web y la tecnología. Me interesa crear páginas claras, rápidas y útiles, con diseños que transmitan identidad.
+                    Mi misión como desarrollador es construir productos que mezclen buena experiencia de usuario con código prolijo y mantenible.
+                </p>
+            </div>
+        </section>
+
+        <section id="tarjetas" class="bloque">
+            <h2>Tarjetas de proyectos</h2>
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Consola retro sobre fondo oscuro">
+                    <h3>Comparador Retro Games</h3>
+                    <p>Mockup de una web para comparar precios de juegos físicos y digitales en diferentes tiendas.</p>
+                </article>
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?auto=format&fit=crop&w=800&q=80" alt="Pantalla con líneas de código en un entorno oscuro">
+                    <h3>Landing Pixel Store</h3>
+                    <p>Página de presentación para una tienda temática de accesorios gamer con estética pixel art.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="bloque">
+            <!-- Habilidades en tabla: organiza tecnologías actuales, de aprendizaje y hobbies; a futuro se puede filtrar por categoría -->
+            <h2>Habilidades y objetivos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tecnologías que domino</td>
+                        <td>HTML, CSS, Git y fundamentos de JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologías que quiero aprender</td>
+                        <td>TypeScript, React, Astro y PostgreSQL</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>Gaming retro, música synthwave y armado de PCs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" class="bloque">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="peliculas" class="bloque">
+            <!-- Películas favoritas: muestra top 3 con imagen y comentario personal; a futuro se puede ampliar a galería completa -->
+            <h2>Mis 3 películas favoritas</h2>
+            <div class="contenedor-peliculas">
+                <article class="pelicula">
+                    <h3>Coherence</h3>
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80" alt="Sala de cine con pantalla grande">
+                    <p>Un thriller de ciencia ficción independiente con una idea brillante y muy buen clima de tensión.</p>
+                </article>
+                <article class="pelicula">
+                    <h3>Predestination</h3>
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80" alt="Proyector de cine clásico encendido">
+                    <p>Me gusta por sus giros de guion y por cómo trabaja el viaje en el tiempo de manera original.</p>
+                </article>
+                <article class="pelicula">
+                    <h3>Moon</h3>
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=800&q=80" alt="Butacas de cine iluminadas por pantalla">
+                    <p>Una película minimalista y profunda, con gran atmósfera y una actuación principal excelente.</p>
+                </article>
+            </div>
+        </section>
     </main>
-    
-    <footer>
+
+    <footer class="pie">
         <p>&copy; 2026 PFO1 - Todos los derechos reservados</p>
+        <p>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
     </footer>
 </body>
 </html>
