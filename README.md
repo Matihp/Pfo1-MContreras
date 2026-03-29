@@ -11,11 +11,11 @@ Este trabajo práctico consiste en un portafolio personal estático desarrollado
 - [x] Archivo `README.md` creado, con breve descripción del TP y checklist.
 
 ### Repositorio y Publicación
-- [ ] Repositorio en GitHub creado.
-- [ ] Proyecto subido al repositorio.
-- [ ] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el `README.md` se indica la URL de GitHub Pages.
-- URL de GitHub Pages: pendiente de publicación.
+- [x] Repositorio en GitHub creado.
+- [x] Proyecto subido al repositorio.
+- [x] Proyecto publicado utilizando GitHub Pages.
+- [x] En el `README.md` se indica la URL de GitHub Pages.
+- URL de GitHub Pages: https://matihp.github.io/Pfo1-MContreras/
 
 ### Uso de Google Fonts
 - [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
